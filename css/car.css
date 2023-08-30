@@ -1,0 +1,822 @@
+body{
+    display: flex;
+    overflow: hidden;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.sky{
+    background: linear-gradient(0deg, white, skyblue);
+    width: 100%;
+    height: 30vh;
+    position: relative;
+}
+
+.sun{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    top: 18px;
+    box-shadow: 0px 0px 20px 6px #e7e401;
+}
+
+.tree-middle1{
+    height: 23%;
+    width: 31px;
+    background: #5d1818;
+    position: absolute;
+    bottom: 337px;
+    right: 279px;
+}
+
+.tree-middle2{
+    height: 23%;
+    width: 31px;
+    background: #5d1818;
+    position: absolute;
+    bottom: 338px;
+    right: 550px;
+}
+
+.tree-leaf1{
+    background: green;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 458px;
+    right: 211px;
+}
+
+.tree-leaf2{
+    background: green;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 455px;
+    right: 485px;
+}
+
+.leaf-shape{
+    width: 31px;
+    height: 28px;
+    background: green;
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(3);
+}
+
+.leaf-shape1{
+    top: 121px;
+    left: 11px;
+}
+
+.leaf-shape2{
+    top: 70px;
+    left: -7px;
+}
+
+.leaf-shape3{
+    top: 19px;
+    left: 11px;
+}
+
+.leaf-shape4{
+    top: -8px;
+    left: 66px;
+}
+
+.leaf-shape5{
+    top: 121px;
+    right: 12px;
+}
+
+.leaf-shape6 {
+    top: 16px;
+    right: 15px;
+}
+
+.leaf-shape7 {
+    top: 68px;
+    right: -6px;
+}
+
+.car{
+    background-color: dodgerblue;
+    height: 156px;
+    width: 342px;
+    position: relative;
+    top: 48px;
+    left: 23px;
+    border-radius: 6% 27% 6% 3%;
+    box-shadow: inset 0 0 17px 15px blue;
+    transition: 2s;
+}
+
+.career{
+    background-color: black;
+    height: 36px;
+    width: 264px;
+    position: absolute;
+    top: -27px;
+    left: 15px;
+    z-index: -1;
+    border-radius: 7px;
+}
+
+.career-kambi{
+    background: white;
+    width: 82%;
+    height: 8px;
+    position: absolute;
+    top: 10px;
+    left: 22px;
+}
+
+.window-div{
+    display: flex;
+}
+
+.window{
+    background: black;
+    width: 51px;
+    height: 53px;
+    margin: 10px;
+    margin-top: 23px;
+    border-radius: 17%;
+    border: 5px solid black;
+    border-style: ridge;
+    padding: 0px;
+    box-shadow: inset 0px 1px 0px 0px white;
+}
+
+.user1{
+    position: absolute;
+    top: 34px;
+    width: 19px;
+    height: 19px;
+    background: white;
+    border-radius: 50%;
+    right: 136px;
+    box-shadow: inset -2px 4px 3px 0px #837e7e;
+}
+
+.user2{
+    position: absolute;
+    top: 57px;
+    width: 23px;
+    height: 22px;
+    background: white;
+    border-radius: 25%;
+    right: 134px;
+    box-shadow: inset -4px 1px 3px 0px #837e7e;
+}
+
+.driver-head{
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    margin-left: 7px;
+    margin-top: 4px;
+}
+
+.driver-body{
+    width: 19px;
+    height: 17px;
+    background: white;
+    border-radius: 24%;
+    margin-left: 7px;
+    margin-top: 4px;
+}
+
+.staring{
+    width: 19px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    margin-left: 32px;
+    margin-top: -26px;
+    transform: skew(219deg, 10deg);
+}
+
+.driver-hand{
+    width: 3px;
+    height: 17px;
+    background: white;
+    margin-left: 31px;
+    rotate: 64deg;
+    margin-top: -8px;
+}
+
+.driver-leg{
+    width: 4px;
+    height: 21px;
+    background: white;
+    margin-left: 23px;
+    rotate: 105deg;
+    margin-top: -4px;
+}
+
+.driver-foot{
+    width: 9px;
+    height: 5px;
+    background: white;
+    margin-left: 38px;
+    margin-top: -11px;
+    rotate: 301deg;
+}
+
+.tier1{
+    background: black;
+    width: 99px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -53px;
+    left: 27px;
+    box-shadow: 0 0 0px 4px white;
+    background: linear-gradient(black 50%, #121111 50%);
+    background-size: 100% 7px;
+}
+
+.tier2{
+    background: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -53px;
+    right: 27px;
+    box-shadow: 0 0 0px 4px white;
+    background: linear-gradient(black 50%, #121111 50%);
+    background-size: 100% 7px; 
+}
+
+.wheel{
+    background: whitesmoke;
+    height: 63px;
+    width: 63px;
+    border-radius: 50%;
+    position: absolute;
+    top: 18px;
+    left: 19px;  
+    box-shadow: inset 0 0 20px 0px black;  
+}
+
+.dot{
+    width: 4px;
+    height: 4px;
+    background: #53372d;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 0px 1px white;
+}
+
+.big-dot{
+    width: 10px;
+    height: 10px;
+    top: 26px;
+    left: 26px;
+    box-shadow: 0 0 0px 1px;
+    background: grey;
+}
+
+.dot1{ 
+    top: 29px;   
+    left: 14px;
+}
+
+.dot2{      
+    top: 15px;      
+    left: 27px;
+}
+
+.dot3{
+    top: 43px;  
+    left: 21px;
+}
+
+.dot4{     
+    top: 26px;    
+    right: 16px;
+}
+
+.dot5{      
+    bottom: 16px;      
+    left: 41px;
+}
+
+.car-front-light{
+    border: 1px solid black;
+    width: 19px;
+    height: 28px;
+    background: #f8e800;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    bottom: 8px;
+    /* z-index: -1; */
+}
+
+/* .car-back-light{
+    border: 1px solid black;
+    width: 19px;
+    height: 28px;
+    background: red;
+    border-radius: 10%;
+    position: absolute;
+    left: -10px;
+    bottom: 30px;
+    box-shadow: inset 2px 1px 3px 0px black;
+    z-index: -1;
+} */
+
+.silencer{
+    background-color: grey;
+    width: 56px;
+    height: 14px;
+    position: absolute;
+    bottom: 8px;
+    left: -36px;
+    border-radius: 5px;
+    z-index: -1;
+    box-shadow: inset 0 0 8px 0px black;
+}
+
+.silencer-round{  
+    width: 11px;      
+    height: 14px;       
+    background: black;       
+    border-radius: 50%;
+}
+
+.road{
+    background: black;
+    width: 100%;
+    height: 338px;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    /* transform: rotateX(69deg);    */
+}
+
+.edge1{
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    background: repeating-linear-gradient(42deg, #ff0, black 100px);
+}
+
+.edge2{
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    background: repeating-linear-gradient(42deg, #ff0, black 100px);
+    bottom: 0;
+}
+
+.center_code1{
+    background: white;
+    height: 10px;
+    width: 134px;
+    position: absolute;
+    top: 47.5%;
+    left: 47px;
+}
+
+.center_code2{
+    background: white;
+    height: 10px;
+    width: 134px;
+    position: absolute;
+    top: 47.5%;
+    left: 319px;
+}
+
+.center_code3{
+    background: white;
+    height: 10px;
+    width: 134px;
+    position: absolute;
+    top: 47.5%;
+    left: 604px;
+}
+
+.center_code4{
+    background: white;
+    height: 10px;
+    width: 134px;
+    position: absolute;
+    top: 47.5%;
+    right: 323px;
+}
+
+.center_code5{
+    background: white;
+    height: 10px;
+    width: 134px;
+    position: absolute;
+    top: 47.5%;
+    right: 56px;
+}
+
+/* animations binding */
+
+ .car{
+    animation: going 6s linear infinite;
+    animation-play-state: paused;
+}
+
+.tier{  
+    animation: rotwheel 4s linear infinite;
+    animation-play-state: paused;
+}
+
+.center_code {
+    animation: going 2s linear infinite; 
+    animation-play-state: paused;
+}
+
+.road-tree{
+    animation: linegoing 5s linear infinite;
+    animation-play-state: paused;
+} 
+
+/* animations */
+
+@keyframes going{
+    0%{
+        left: -700px; 
+    }
+    100%{
+        left: 1370px;  
+    }
+}
+
+@keyframes rotwheel{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }   
+}
+
+@keyframes linegoing{
+    0%{
+        transform: translateX(-2000px);  
+    }
+    100%{
+        transform: translateX(2000px);  
+    }
+}
+
+@keyframes human{
+    0%{   
+        left: 400px;
+    }
+    50%{
+        top: 50px;
+        left: 800px;
+        rotate: 100deg;
+    }
+    100%{
+        top: 340px;
+        left: 900px;
+        rotate: 230deg;  
+    }
+}
+
+@keyframes blood{
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 2;
+    }
+    100%{
+        scale: 2.2;
+    }
+}
+
+@keyframes ambulance{
+    0%{
+        right: -500px;
+    }
+    
+    100%{ 
+        right: 300px;
+    }
+}
+
+@keyframes rotwheel2{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }   
+}
+
+.human{
+    width: 10%;
+    position: absolute;
+    top: 340px;
+    left: 400px;
+    animation: human 4s forwards linear 1s;
+    animation-play-state: paused;
+    display: none;
+}
+
+.human-head{
+    background-color: tan;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.human-body{
+    background-color: tan;
+    width: 50px;
+    height: 68px;
+    clip-path: polygon(100% 45%, 100% 100%, 0 100%, 0 44%, 51% 0);
+}
+
+.blood{
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 13% 13%);
+    width: 141px;
+    height: 112px;
+    position: absolute;
+    background: linear-gradient(346deg, #ed0505, #310303);
+    right: 334px;
+    bottom: 131px;
+    border-radius: 60%;
+    display: none;
+    animation: blood 3s forwards linear;
+    z-index: -1;
+    animation-play-state: paused;
+}
+
+.ambulance {
+    position: absolute;
+    bottom: 10px;
+    animation: ambulance 6s linear both 2s;
+    display: none;
+    /* left: 203px; */  
+}
+
+.ambu-text{
+    position: absolute;
+    text-align: center;
+}
+
+.ambu-text .title {
+    font-size: 26px;
+    font-weight: bold;
+    color: blue;
+    text-shadow: 1px 1px 0px black;
+    font-family: sans-serif;
+    padding-left: 19px;
+    padding-top: 10px;
+}
+
+.ambu-text .number {
+    font-size: 4em;
+    color: red;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px BLACK;
+    font-family: system-ui;
+    margin-top: -2px;
+}
+
+.sirence {
+    position: absolute;
+    background: red;
+    width: 30px;
+    height: 15px;
+    left: -32px;
+    top: -5px;
+    box-shadow: 0 0 8px 3px darkred;
+    border-radius: 16%;
+    z-index: 2;
+}
+
+.ambu-front {
+    top: 0px;
+    position: absolute;
+    left: -135px;
+    width: 136px;
+    height: 169px;
+    background: #b8c2cb;
+    z-index: 0;
+    clip-path: polygon(47% 13%, 100% 0, 100% 89%, 0 91%, 5% 63%, 27% 48%);
+    box-shadow: 0 0 3px 0px inset;
+}
+
+.front-mirror {
+    width: 69px;
+    height: 57px;
+    background: black;
+    clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0 100%);
+    position: absolute;
+    top: 23px;
+    left: 53px;
+    border-radius: 10%;
+}
+
+.ambu-front-tier {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 0px 4px white;
+    background: linear-gradient(black 50%, #121111 50%);
+    background-size: 100% 7px;
+    top: 123px;
+    left: -99px;
+}
+
+#ambu-front-tier, #ambu-tier{
+    animation: rotwheel2 2s linear infinite;
+}
+
+.ambu-body {
+    width: 273px;
+    height: 150px;
+    background: #b8c2cb;
+}
+
+.ambu-tier {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 0px 4px white;
+    background: linear-gradient(black 50%, #121111 50%);
+    background-size: 100% 7px;
+    bottom: 25px;
+    left: 172px;
+}
+
+.ambu-wheel1 {
+    background: whitesmoke;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    box-shadow: inset 0 0 20px 0px black;
+}
+
+.ambulance .dot {
+    width: 4px;
+    height: 4px;
+    background: #53372d;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 0px 1px white;
+}
+
+.ambulance .big-dot {
+    width: 10px;
+    height: 10px;
+    top: 18px;
+    left: 19px;
+    box-shadow: 0 0 0px 1px;
+    background: grey;
+}
+
+.ambulance .dot1 {
+    top: 30px;
+    left: 12px;
+}
+
+.ambulance .dot2 {
+    top: 9px;
+    left: 25px;
+}
+
+.ambulance .dot3 {
+    top: 14px;
+    left: 10px;
+}
+
+.ambulance .dot4 {
+    top: 32px;
+    right: 12px;
+}
+
+.ambulance .dot5 {
+    bottom: 23px;
+    left: 36px;
+}
+
+.closedoor1{
+    background-color: black;
+    height: 100vh;
+    background: repeating-linear-gradient(90deg, red, black 103px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    animation: door1 5s;
+    animation-fill-mode: both;
+    z-index: 2;
+    box-shadow: inset -10px -4px 17px 20px;
+    border-radius: 0%;
+}
+.closedoor2{
+    background-color: black;
+    background: repeating-linear-gradient(90deg, red, black 103px);
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    animation: door2 5s;
+    animation-fill-mode: both;
+    z-index: 2;
+    box-shadow: inset -10px -4px 17px 20px;
+}
+
+@keyframes door1{
+    100%{
+        left: -700px;
+    }
+}
+@keyframes door2{
+    100%{
+        right: -700px;
+    }
+}
+
+@keyframes lorryaccident{
+    0%{
+        left: -25%;
+    }
+    50%{
+        left: 18%;
+    }
+    100%{
+        left: -25%;
+    }
+}
+
+.lorry{
+    position: relative;
+    animation: lorryaccident 4s;
+    left: -25%;
+    display: none;
+}
+.lorry-mirror {
+    position: absolute;
+    background: black;
+    width: 52px;
+    height: 44px;
+    left: 203px;
+    bottom: 34px;
+    border-radius: 17%;
+    border: 5px solid black;
+    border-style: ridge;
+    box-shadow: inset 0px 1px 0px 0px white;
+}
+.lorry-body {
+    width: 259px;
+    height: 148px;
+    background: #FFEB3B;
+    position: absolute;
+    left: 32px;
+    clip-path: polygon(56% 1%, 96% 1%, 100% 52%, 100% 100%, 51% 100%, 0 100%, 0 59%, 54% 28%);
+    bottom: -43px;
+    box-shadow: inset 0 0 11px 1px;
+    border-radius: 3%;
+}
+
+.lorry-tier1 {
+    background: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0px 13px black;
+    position: absolute;
+    top: 16px;
+    left: 198px;
+}
+
+.lorry-tier2 {
+    background: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0px 13px black;
+    position: absolute;
+    top: 16px;
+    left: 52px;
+}

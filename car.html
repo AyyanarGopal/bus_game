@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/car.css">   
+</head>
+<body id="wholedisplay">
+
+    <div class="closedoor1"></div>
+    <div class="closedoor2"></div>
+
+   <div class="sky" id="sky">
+        <div class="sun" id="sun"></div>
+   </div>
+
+   <div class="tree">
+        <div class="tree-middle1 road-tree"></div>
+        <div class="tree-leaf1 road-tree">
+            <div class="leaf-shape leaf-shape1"></div>
+            <div class="leaf-shape leaf-shape2"></div>
+            <div class="leaf-shape leaf-shape3"></div>
+            <div class="leaf-shape leaf-shape4"></div>
+            <div class="leaf-shape leaf-shape5"></div>
+            <div class="leaf-shape leaf-shape6"></div>
+            <div class="leaf-shape leaf-shape7"></div>
+        </div>
+
+        <div class="tree-middle2 road-tree"></div>
+        <div class="tree-leaf2 road-tree">
+            <div class="leaf-shape leaf-shape1"></div>
+            <div class="leaf-shape leaf-shape2"></div>
+            <div class="leaf-shape leaf-shape3"></div>
+            <div class="leaf-shape leaf-shape4"></div>
+            <div class="leaf-shape leaf-shape5"></div>
+            <div class="leaf-shape leaf-shape6"></div>
+            <div class="leaf-shape leaf-shape7"></div>
+        </div>
+   </div>
+   
+     <div class="direction-btns">
+        <button type="button" onclick="up()">UP</button>
+        <button type="button" onclick="down()">DOWN</button>
+    </div>
+
+    <div class="engine-btns">
+        <button type="button" onclick="startEngine()">Start the Engine</button> 
+        <button type="button" onclick="start()">Start Bus</button> 
+        <button type="button" onclick="horn()">Horn</button> 
+        <button type="button" onclick="stop()">Stop Bus</button>   
+    </div>
+
+     <div class="music-btns">
+        <button type="button" onclick="play()">play</button>
+        <button type="button" onclick="pause()">pause</button>
+    </div>
+
+    <div class="weather-btns">
+        <button type="button" onclick="changeDay()">Morning Mode</button>
+        <button type="button" onclick="changeNight()">Night Mode</button>
+    </div>
+
+    <div class="other-btns">
+        <button type="button" id="assident" onclick="makeAccident()">Make Assident</button>
+        <button type="button" style="display: none;" id="make_ambu_btn" onclick="callAmbulance()">Call Ambulance</button>
+        <button type="button" style="display:none" id="make_hospital_btn" onclick="goHospital()">Go To Hospital</button>
+    </div>
+    
+    <audio src="./audios/engine start.mp3" id="startengine"></audio>
+    <audio src="./audios/busstartmove.mp3" id="movesound" loop></audio>
+    <audio src="./audios/in bus stop.mp3" id="processing"></audio>
+    <audio src="./audios/horn.mp3"  id="horn"></audio>
+    <audio src="./audios/busstop.mp3" id="busstop"></audio>
+    <audio src="./audios/rolex.mp3" id="rolex"></audio>
+    <audio src="./audios/skit.mp3" id="skit"></audio>
+    <audio src="./audios/skit.mp3" id="skit2"></audio>
+    <audio src="./audios/ambulance.mp3" id="ambu-sound"></audio>
+    
+    <div class="car" id="car">
+
+        <!-- <div class="career">
+            <div class="career-kambi"></div>
+        </div> -->
+
+        <div class="window-div">
+            <div class="window window1">
+                <div class="user1"></div>
+                <div class="user2"></div>
+            </div>
+            <div class="window window2">
+                <div class="user1"></div>
+                <div class="user2"></div>
+            </div>
+            <div class="window window3"></div>
+            <div class="window window4">
+                <div class="driver-head"></div>
+                <div class="driver-body"></div>
+                <div class="staring"></div>
+                <div class="driver-hand"></div>
+                <div class="driver-leg"></div>
+                <div class="driver-foot"></div>
+            </div>
+        </div>
+
+        <div class="tier tier1" id="tier1">
+            <div class="wheel">
+                <div class="dot big-dot"></div>
+                <div class="dot dot1"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+                <div class="dot dot4"></div>
+                <div class="dot dot5"></div>
+            </div>
+        </div>
+
+        <div class="tier tier2" id="tier2">
+            <div class="wheel">
+                <div class="dot big-dot"></div>
+                <div class="dot dot1"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+                <div class="dot dot4"></div>
+                <div class="dot dot5"></div>
+            </div>
+        </div>
+
+        <div class="car-front-light"></div>
+        <div class="car-back-light"></div>
+
+        <div class="silencer">
+            <div class="silencer-round"></div>
+        </div>
+
+    </div>
+
+    <div class="road">
+
+        <div class="edge edge1">
+            <div class="line"></div>
+        </div>
+
+        <div class="edge edge2">
+            <div class="line"></div>
+        </div>
+
+        <div class="center_code center_code1"></div>
+        <div class="center_code center_code2"></div>
+        <div class="center_code center_code3"></div>
+        <div class="center_code center_code4"></div>
+        <div class="center_code center_code5"></div>
+
+    </div>
+
+    <div class="human" id="human" draggable="true">
+            <div class="human-head" id="human-head" draggable="true"></div>
+            <div class="human-body" draggable="true"></div>
+    </div>
+
+    <div class="blood" id="blood"></div>
+
+    <div class="ambulance" id="ambulance">
+
+        <div class="ambu-text">
+            <div class="title">Thamizhaga Arasu</div>
+            <div class="number">108</div>
+        </div>
+
+        <div class="sirence"></div>
+
+        <div class="ambu-front">
+            <div class="front-mirror"></div>
+        </div>
+
+        <div class="ambu-front-tier" id="ambu-front-tier">
+            <div class="ambu-wheel1">
+                <div class="dot big-dot"></div>
+                <div class="dot dot1"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+                <div class="dot dot4"></div>
+                <div class="dot dot5"></div>
+            </div>
+        </div>
+
+        <div class="ambu-body"></div>
+        <div class="ambu-tier" id="ambu-tier">
+            <div class="ambu-wheel1">
+                <div class="dot big-dot"></div>
+                <div class="dot dot1"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+                <div class="dot dot4"></div>
+                <div class="dot dot5"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="lorry" id="lorry">
+        <div class="lorry-body"></div>
+        <div class="lorry-mirror"></div>
+        <div class="lorry-tier1"></div>
+        <div class="lorry-tier2"></div>
+
+    </div>
+
+<script src="./js/car.js"></script>
+</body>
+</html>
