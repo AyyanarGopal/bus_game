@@ -1,3 +1,12 @@
+    // alert message for users
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        if (window.innerWidth <= 768) {
+            window.location.href = "/html/blocked.html";
+        }
+    } else {
+        alert("i haven't fully completed this game yet due to a lack of time, but i plan to finish it in the upcoming days")
+    }
 
     // trigger function while animations
 
